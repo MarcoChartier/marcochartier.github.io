@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Introduction - My Docs</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">Welcome to MkDocs</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Analyse%20questionnaires%20satisfaction%20clients%201/" class="nav-link">Intro</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">Introduction</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../Projet%20biblioth%C3%A8que%20Vid%C3%A9o/" class="nav-link">Objectif</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../Analyse%20questionnaires%20satisfaction%20clients%201/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../Projet%20biblioth%C3%A8que%20Vid%C3%A9o/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#introduction" class="nav-link">Introduction</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#data-flows" class="nav-link">Data flows</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#nouveau" class="nav-link">Nouveau</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#traiter-un-data-flow" class="nav-link">Traiter un data flow</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#data-exchange-definition" class="nav-link">Data Exchange définition</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#ajouter-une-definition-dechange-de-donnees" class="nav-link">Ajouter une définition d'échange de données</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#correspondance-champ" class="nav-link">Correspondance champ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#ajouter-une-regle-de-transformation" class="nav-link">Ajouter une règle de transformation</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#configure-package" class="nav-link">Configure package</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#ajouter-un-package-de-configuration" class="nav-link">Ajouter un package de configuration</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#priorite-champ" class="nav-link">Priorité champ</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#filtre" class="nav-link">Filtre</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#dimension" class="nav-link">Dimension</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#job-queue-categorie" class="nav-link">Job Queue catégorie</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-level="1"><a href="#flux-de-travail" class="nav-link">Flux de travail</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#valider-le-statut-des-echanges-passer" class="nav-link">Valider le statut des échanges passer</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="introduction">Introduction</h1>
+<p>CNX est une extension de Business Central qui vous permet d'avoir une meilleur contrôle sur le flow d'importation et d'exportation de vos données. Si l'un de vos système offre un API ou que vous êtes capable d'exporter des données sous format XML ou JSON alors CNX peux vous aider à bâtir un pipeline entre vos autres système et Business Central.</p>
+<p>Le processus d'automatisation est le suivant.</p>
+<ol>
+<li>Créer un data flows</li>
+<li>Créer un définition d'échange de données</li>
+<li>Créer un configuration package</li>
+<li>Créer une file d'attente des travaux</li>
+</ol>
+<h1 id="data-flows">Data flows</h1>
+<p>Le cœur de CNX sont les Data flows. C'est des  fiches qui vous permette de lier la bonne définition d'échange de données avec le bon configuration package et d'affecter la bonne file d'attente des travaux. </p>
+<p>Ouvrez la page <strong>Data Flows</strong> pour avoir la liste de vos flux de donnée. 
+<img alt="" src="Pasted%20image%2020230321085005.png" /></p>
+<h2 id="nouveau">Nouveau</h2>
+<ol>
+<li>Ouvrir la page <strong>Data Flows</strong></li>
+<li>Utiliser la fonction <strong>Nouveau &gt;&gt; Nouveau</strong></li>
+<li>Donnée un code et un nom au flux de données<img alt="" src="Pasted%20image%2020230317142541.png" /></li>
+<li>Cocher les cases d'<strong>autoprocess</strong> si vous souhaiter traiter les données immédiatement après réception sinon voir processus <strong>Traiter un data flow</strong></li>
+<li>Sélectionner le bon Data Exchange définition. Si aucun n'est adéquat voir le processus <strong>Ajouter une définition d'échange de données</strong></li>
+<li>Attribuer une <strong>Job Queue Category</strong></li>
+<li>Utiliser la fonction <strong>Nouveau &gt;&gt; Create Config. Package</strong></li>
+<li>Ajouter les informations sous la section <strong>API Configuration</strong> si nécessaire</li>
+</ol>
+<h2 id="traiter-un-data-flow">Traiter un data flow</h2>
+<p>Parfois, il est possible de traiter manuellement un data flow. C'est utile dans le processus de développement et de configuration. Ainsi, vous pouvez modifier la source de donnée ou la configuration de l'échange de donnée afin de traiter les données incorrectement traiter. </p>
+<ol>
+<li>Ouvrir le data flow qui vous intéresse</li>
+<li>Utiliser la fonction <strong>Nouveau &gt;&gt; Process Instance</strong><img alt="" src="Pasted%20image%2020230323111123.png" /></li>
+<li>Appuyer sur <strong>OK</strong></li>
+</ol>
+<p>Si une erreur survient voici la procédure pour corriger le problème. 
+1. Ouvrir le data flow fautif
+2. Vérifier les entrer de journal  avec la fonction <strong>Associé &gt;&gt; Log entries</strong><img alt="" src="Pasted%20image%2020230323111908.png" />
+3. Utiliser la fonction <strong>Nouveau &gt;&gt; Download file</strong> pour obtenir le dernier jeux de donnée traiter<img alt="" src="Pasted%20image%2020230323111123.png" />
+4. Ouvrir le fichier télécharger
+5. Corriger la donnée ou identifier le format de la donnée qui cause l'erreur
+6. Utiliser la fonction <strong>Actions &gt;&gt; Import file</strong><img alt="" src="Pasted%20image%2020230323111800.png" />
+7. Utiliser la fonction <strong>Nouveau &gt;&gt; Process Instance</strong>
+8. Mettre image manquante</p>
+<h1 id="data-exchange-definition">Data Exchange définition</h1>
+<h2 id="ajouter-une-definition-dechange-de-donnees">Ajouter une définition d'échange de données</h2>
+<ol>
+<li>Ouvrir la page <strong>Définitions d'échange de données</strong></li>
+<li>Utiliser la fonction <strong>Nouveau</strong></li>
+<li>Sous la section <strong>Général</strong><ol>
+<li>Donnée un code et un nom à la définition d'échange de données</li>
+<li>Choisir un type de fichier et utiliser le type <strong>Importation générique</strong></li>
+<li>writing codeunite Voir table</li>
+</ol>
+</li>
+<li>Sous la section <strong>Définition ligne</strong><ol>
+<li>Entrer le détail de la ligne, le code et le Nom</li>
+<li>Fournir l'étiquette de ligne de données</li>
+<li>Utiliser la fonction <strong>Gérer &gt;&gt; Correspondance de champ</strong><img alt="" src="Pasted%20image%2020230317111501.png" /></li>
+<li>Voir le processus <strong>Correspondance champ</strong> une fois les définitions colonne terminer</li>
+</ol>
+</li>
+<li>Sous la section <strong>Définitions Colonne</strong><ol>
+<li>Pour chaque Définitions de lignes, entrer le no de colonne, le nom et le type de données</li>
+<li>Entrer le Chemin et autre information </li>
+</ol>
+</li>
+</ol>
+<p>Table des code unite d'écriture
+Ligne def relation card</p>
+<h2 id="correspondance-champ">Correspondance champ</h2>
+<ol>
+<li>Sur la page correspondance champ</li>
+<li>Sous la section <strong>Général</strong><ol>
+<li>Entrer le code de table ainsi que le nom<img alt="" src="Pasted%20image%2020230317111826.png" /></li>
+<li>Sélectionner le codeunit si besoin <img alt="" src="Pasted%20image%2020230324091438.png" /></li>
+</ol>
+</li>
+<li>Dans la section <strong>Correspondance de champ</strong><ol>
+<li>Inscrire le no de colonne de votre source de donnée</li>
+<li>Inscrire le code champ qui recevra l'information dans business central</li>
+<li>Si nécessaire définisse une règle de transformation<img alt="" src="Pasted%20image%2020230322144855.png" /></li>
+<li>Si pertinent, ajouter le code de dimension associer</li>
+</ol>
+</li>
+</ol>
+<h1 id="ajouter-une-regle-de-transformation">Ajouter une règle de transformation</h1>
+<ol>
+<li>Ouvrir la page <strong>Règles de transformation</strong><img alt="" src="Pasted%20image%2020230324090433.png" /></li>
+<li>Utiliser la fonction <strong>Nouveau</strong></li>
+<li>Donner un nom et une description <img alt="" src="Pasted%20image%2020230324090546.png" /></li>
+<li>Utiliser le type de transformation ou une règle de transformation</li>
+<li>Pour tester la règle, entrer une donnée test dans la boite <strong>Texte du test</strong>, puis cliquer <strong>Mettre à jour</strong>
+Vous pouvez utiliser les expressions régulières afin d'opérer les bonnes transformation sur les texte de donnée : <a href="https://fr.wikipedia.org/wiki/Expression_r%C3%A9guli%C3%A8re">Expression régulière — Wikipédia (wikipedia.org)</a></li>
+</ol>
+<h1 id="configure-package">Configure package</h1>
+<p>Les données traiter reste dans son configuration package jusqu'à ce qu'il soit appliquer. C'est aussi utile lorsque le configuration package renvoie une error pour un ou plusieurs ligne de donnée. </p>
+<h2 id="ajouter-un-package-de-configuration">Ajouter un package de configuration</h2>
+<ol>
+<li>Sur la carte de data flow, utiliser la fonction <strong>Create configueration package</strong>
+<img alt="" src="Pasted%20image%2020230322145052.png" /></li>
+</ol>
+<h2 id="priorite-champ">Priorité champ</h2>
+<ol>
+<li>Ouvrir un configuration package</li>
+<li></li>
+<li>Sous la section <strong>Tables</strong><ol>
+<li>Sélectionner une lignes</li>
+<li>Utiliser la fonction <strong>Table &gt;&gt; Champs</strong></li>
+<li>Cliquer sur modifier la liste</li>
+<li>Sélectionner la ligne à changer l'ordre de traitement</li>
+<li>Utiliser la fonction <strong>Déplacer vers le haut</strong> ou <strong>Déplacer vers la bas</strong></li>
+</ol>
+</li>
+</ol>
+<h2 id="filtre">Filtre</h2>
+<ol>
+<li>Ouvrir un configuration package</li>
+<li>Sous la section <strong>Tables</strong><ol>
+<li>Sélectionner une lignes</li>
+<li>Utiliser la fonction <strong>Table &gt;&gt; Filtres</strong></li>
+<li>Indiquer le code champ</li>
+<li>...</li>
+</ol>
+</li>
+</ol>
+<h2 id="dimension">Dimension</h2>
+<ol>
+<li>Ouvrir un configuration package</li>
+<li>Sous la section <strong>Tables</strong><ol>
+<li>Sélectionner une lignes</li>
+</ol>
+</li>
+</ol>
+<p>mapping old value &gt;&gt; New value
+processus rules</p>
+<h1 id="job-queue-categorie">Job Queue catégorie</h1>
+<p>La file d'attente des travaux va permettre de traiter l'importation/exportation des données de manière à minimiser l'impact sur le système.   </p>
+<h1 id="flux-de-travail">Flux de travail</h1>
+<p>L'une des fonctionnalités de Business Central c'est les flux de travail
+Automatisation lors des modifications exemple</p>
+<ol>
+<li>Ouvrir la page <strong>Flux de travail</strong><img alt="" src="Pasted%20image%2020230322144501.png" /></li>
+<li>Utiliser la fonction <strong>Nouveau &gt;&gt; Créer</strong></li>
+<li>Entrer un code, une description et une catégorie<img alt="" src="Pasted%20image%2020230322144536.png" /></li>
+<li>Sous la section <strong>Étapes de flux de travail</strong><ol>
+<li>Sélectionner le cas d'événement <strong>A specific field on a record has received a modification</strong><img alt="" src="Pasted%20image%2020230322144635.png" /></li>
+<li>Cliquer sur la condition</li>
+<li>Ajouter les filtres <strong>TableNo et No</strong> et entrer les numéros associer<img alt="" src="Pasted%20image%2020230322144601.png" /></li>
+<li>Cliquer sur la réponse</li>
+<li>Sélectionner la réponse <strong>Schedule and API request through the job queue to sent at a determined time</strong> ou <strong>Send an API request to a configured external system</strong><img alt="" src="Pasted%20image%2020230322144653.png" /></li>
+<li>Sélectionner le data flow CNX, puis sur <strong>OK</strong></li>
+</ol>
+</li>
+<li>Activé le flux de travail</li>
+</ol>
+<h2 id="valider-le-statut-des-echanges-passer">Valider le statut des échanges passer</h2>
+<ol>
+<li>Ouvrir la page <strong>Écritures de la file d'attente des travaux</strong><img alt="" src="Pasted%20image%2020230317143103.png" /></li>
+<li>Repérer la transactions qui vous intérêts </li>
+</ol>
+<p>À rajouter : 
+Flux de travail pour erreur ou tuile pour erreur</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
